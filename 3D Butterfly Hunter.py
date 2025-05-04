@@ -6,7 +6,6 @@ import time
 import math
 import os
 
-# Game state
 player_pos = [0, 0]
 butterflies = []
 caught = 0
@@ -18,7 +17,7 @@ start_time = time.time()
 last_spawn_time = time.time()
 game_over = False
 high_score = 0
-final_remaining_time = 0  # To store the remaining time when game ends
+final_remaining_time = 0  
 
 WIDTH, HEIGHT = 1000, 800
 GRID = 600
@@ -26,11 +25,10 @@ net_radius = 30
 butterfly_radius = 10
 butterfly_wing_extent = 20
 
-# Camera control
+
 camera_angle = 0
 camera_height = 700
 
-# File to store high score
 HIGH_SCORE_FILE = "high_score.txt"
 
 def load_high_score():
